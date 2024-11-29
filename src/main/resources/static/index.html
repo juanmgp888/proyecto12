@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo Maestro-Detalle</title>
+    <style>
+        table,th,td {
+            border: 1px solid black;
+            padding: 4px;
+        }
+        a{
+            color:blue;
+        }
+     </style>
+</head>
+<body>
+    <h2>Lista de Solicitudes</h2>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Fecha</th>
+            <th>Estado</th>
+        </tr>
+        <tr>
+            <td><a href="">1</a></td>
+            <td>2024-11-25</td>
+            <td>Pendiente</td>
+        </tr>
+        <tr>
+            <td><a href="">2</a></td>
+            <td>2024-11-26</td>
+            <td>Aprobado</td>
+        </tr>
+        <tr>
+            <td><a href="">3</a></td>
+            <td>2024-11-27</td>
+            <td>Rechazado</td>
+        </tr>
+        
+    </table>
+    <h2>Detalle de Solicitud</h2>
+    <p>
+    <label for="solicitud">ID Solicitud: <input type="text" id="solicitud"></label>
+    </p>
+    <p>
+    <label for="fecha">Fecha:<input type="date" id="fecha" name="fecha1"></label> 
+    </p>
+    <p>
+    <label for="estado">Estado: <input type="text" id="estado" name="txtestado"></label>
+    </p>
+    <label for="descripcion">Descripción:<br>
+    <textarea name="descripcion" rows="4" cols="40" id="descripcion" placeholder="Descripción de la solicitud 1"></textarea>
+    </label>
+</body>
+</html>
