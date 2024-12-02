@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modelo Maestro-Detalle</title>
+    <!-- <script src="http://localhost:8080/javascript/mispruebas.js"></script>  -->
+    <!-- <script src="/javascript/mispruebas.js"></script> -->
+    <script src="javascript/mispruebas.js"></script> <!-- cuelga de la carpeta 'static'-->
     <style>
         table,th,td {
             border: 1px solid black;
@@ -11,6 +14,10 @@
         }
         a{
             color:blue;
+        }
+        input:read-only,
+        textarea:read-only {
+             background-color: silver;
         }
      </style>
 </head>
@@ -47,8 +54,10 @@
     <div id="detalle1">
     <form>
         <!-- Se han omitido los atributos 'name'. Sirven para identificar elementos desde JS-->
-        <p><label for="solicitud">ID Solicitud: <input type="text" id="solicitud1" value="1" readonly></label></p>
-        <p><label for="fecha">Fecha:<input type="date" id="fecha1" readonly></label></p>
+        <!-- Id no debe mostrarse en la vista de detalle, pero sí estar presente -->
+        <!-- <p><label for="solicitud">ID Solicitud: -->
+        <input type="hidden" id="solicitud1" value="1" readonly></label></p>
+        <p><label for="fecha">Fecha:<input type="date" id="fecha1" readonly onclick="console.log('Hola \"Juan\"'")></label></p>
         <p><label for="estado">Estado: <input type="text" id="estado1" readonly></label></p>
         <label for="descripcion">Descripción:</label><br>
         <textarea rows="4" cols="40" id="descripcion1" placeholder="Descripción de la solicitud 1" readonly></textarea>
