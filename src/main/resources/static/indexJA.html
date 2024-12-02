@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maestro Detalle de Solicitudes</title>
+</head>
+<body>
+
+    <!-- Sección de Maestro -->
+    <h2>Lista de Solicitudes</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Fecha</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="#detalle1">1</a></td>
+                <td>2024-11-25</td>
+                <td>Pendiente</td>
+            </tr>
+            <tr>
+                <td><a href="#detalle2">2</a></td>
+                <td>2024-11-26</td>
+                <td>Aprobada</td>
+            </tr>
+            <tr>
+                <td><a href="#detalle3">3</a></td>
+                <td>2024-11-27</td>
+                <td>Rechazada</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Sección de Detalle -->
+    <h2>Detalle de Solicitud</h2>
+    <div id="detalle1">
+        <form>
+            <label for="idSolicitud1">ID Solicitud:</label>
+            <input type="text" id="idSolicitud1" value="1" readonly><br><br>
+
+            <label for="fechaSolicitud1">Fecha:</label>
+            <input type="date" id="fechaSolicitud1" value="2024-11-25" readonly><br><br>
+
+            <label for="estadoSolicitud1">Estado:</label>
+            <input type="text" id="estadoSolicitud1" value="Pendiente" readonly><br><br>
+
+            <label for="descripcionSolicitud1">Descripción:</label><br>
+            <textarea id="descripcionSolicitud1" rows="4" cols="50" readonly>Descripción de la solicitud 1</textarea><br><br>
+        </form>
+    </div>
+</body>
+</html>
