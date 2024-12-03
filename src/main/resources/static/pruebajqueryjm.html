@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo Maestro-Detalle</title>
+    <title>Prueba jQuery 01</title>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
+    <script src="javascript/pruebajqueryjm.js"></script>
 </head>
 <body>
-
+    <div id="detalle1">
+        <form>
+            <input type="hidden" id="solicitud1" value="1" readonly></label></p>
+            <p><label for="fecha">Fecha:<input type="date" id="fecha1" readonly onclick="console.log('Hola Juan')"></label></p>
+            <p><label for="estado">Estado: <input type="text" id="estado1" readonly></label></p>
+            <label for="descripcion">Descripción:</label><br>
+            <textarea rows="4" cols="40" id="descripcion1" placeholder="Descripción de la solicitud 1" readonly></textarea>
+        </form>
+    </div>
+    <button>Púlsame y haré desaparecer las etiquetas/'labels'</button>
 </body>
 </html>
+<!-- Levantar servidor: mvn spring-boot:run y usar URL: http://localhost:8080/pruebajqueryjm.html -->
